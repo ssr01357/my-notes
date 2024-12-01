@@ -33,14 +33,14 @@ export default ((opts?: Partial<ContentMetaOptions>) => {
         segments.push(formatDate(getDate(cfg, fileData)!, cfg.locale))
       }
 
-      // Display reading time if enabled
-      if (options.showReadingTime) {
-        const { minutes, words: _words } = readingTime(text)
-        const displayedTime = i18n(cfg.locale).components.contentMeta.readingTime({
-          minutes: Math.ceil(minutes),
-        })
-        segments.push(displayedTime)
-      }
+      // Remove the reading time segment
+      // if (options.showReadingTime) {
+      //   const { minutes, words: _words } = readingTime(text)
+      //   const displayedTime = i18n(cfg.locale).components.contentMeta.readingTime({
+      //     minutes: Math.ceil(minutes),
+      //   })
+      //   segments.push(displayedTime)
+      // }
 
       const segmentsElements = segments.map((segment) => <span>{segment}</span>)
 
