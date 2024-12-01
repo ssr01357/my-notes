@@ -3,7 +3,8 @@ title: Anomalous States of Knowledges as a Basis for Information Retrieval
 draft: false
 tags:
 ---
- 
+
+안없어지자나...
 Nicholas J. Belkin
 
 그동안의 information retrieval 연구 -> System의 속성(document representation, channel같은거)에 포커스
